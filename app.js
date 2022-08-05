@@ -30,7 +30,7 @@ app.patch('/login', async (req, res, next) => {
   us_service.acc.token=req.body["ACCESS"]["US_TOKEN"]
   res.json(await us_service.acc.changePass(req.body["ACCESS"]["US_PASSWORD"],req.body["US_NEWPASS"]))
 });
-app.get('/login', async (req, res, next) => {
+app.get('/', async (req, res, next) => {
   
   
 
