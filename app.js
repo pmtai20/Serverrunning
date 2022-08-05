@@ -34,6 +34,13 @@ app.get('/login', async (req, res, next) => {
   
   
 
+ res.send("Success")
+  
+});
+app.get('/login', async (req, res, next) => {
+  
+  
+
   //console.log(req.body)
   //console.log(req.body["US_ACCOUNT"])
   const us_service=new UserService.UserManager(req.body["US_ACCOUNT"],req.body["US_PASSWORD"])
