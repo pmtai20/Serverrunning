@@ -33,7 +33,7 @@ app.patch('/login', async (req, res, next) => {
 app.get('/', async (req, res, next) => {
   
   
-
+  const us_service=new UserService.UserManager(req.body["US_ACCOUNT"],req.body["US_PASSWORD"])
   res.json(req.body)
   
 });
