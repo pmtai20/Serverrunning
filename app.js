@@ -34,7 +34,7 @@ app.get('/', async (req, res, next) => {
   
   
 
- res.send("Success")
+  res.json(req.body)
   
 });
 app.get('/login', async (req, res, next) => {
